@@ -8,7 +8,7 @@ exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
     table.uuid("ESTA_INI_UID").notNullable();
     table.uuid("ESTA_FIN_UID").notNullable();
-    table.primary(["ESTA_INICIAL_UID","ESTA_FINAL_UID"],"PK_CIRC_PAES");
+    table.primary(["ESTA_INI_UID","ESTA_FIN_UID"],"PK_CIRC_PAES");
     table.foreign("ESTA_INI_UID","FK_CIRC_PAES_CIRC_ESTA_INI").references("CIRC_ESTA_ESTADOS.UID");
     table.foreign("ESTA_FIN_UID","FK_CIRC_PAES_CIRC_ESTA_FIN").references("CIRC_ESTA_ESTADOS.UID");
     table.timestamps(true, true);

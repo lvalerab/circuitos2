@@ -16,8 +16,7 @@ exports.up = function (knex) {
     table.timestamps(true, true);
     table.charset("utf32");
     table.collate("utf32_general_ci");
-    table.comment("Almacena la relación de permisos con los grupos y los estados");
-    table.foreign("CAPE_UID","FK_PERM_PERM_PERM_CAPE").references("PERM_CAPE_CATEGORIA_PERMISO.UID");
+    table.comment("Almacena la relación de permisos con los grupos y los estados");    
   });
 };
 

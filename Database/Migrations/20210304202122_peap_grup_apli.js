@@ -12,7 +12,7 @@ exports.up = function (knex) {
     table.uuid("PROC_UID").nullable();
     table.timestamps(true, true);
     table.foreign("GRUP_UID","FK_PEAP_GRAP_PERM_GRUP").references("PERM_GRUP_GRUPOS.UID");
-    table.foreign("APLI_UID","FK_PEAP_GRAP_APLI_APLI").references("APLI_APLI_APLIACION.UID");
+    table.foreign("APLI_UID","FK_PEAP_GRAP_APLI_APLI").references("APLI_APLI_APLICACION.UID");
     table.charset("utf32");
     table.collate("utf32_general_ci");
     table.comment("Almacena la relación de grupos para una aplicación concreta y un procedimiento en concreto");

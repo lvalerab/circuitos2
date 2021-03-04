@@ -3,17 +3,16 @@
  * Assign your table name to the tableName variable.
  * Remember, it's always in plural
  */
-let tableName = "APLI_PROC_PROCEDIMIENTOS";
+let tableName = "APLI_ELEM_ELEMENTOS";
 exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.uuid("UID").primary("PK_APLI_PROC");
-    table.uuid("APLI_UID").notNullable();
-    table.string("nombre",255);
+    table.uuid("UID").primary("PK_APLI_ELEM");
+    table.uuid("TIEL_UID").notNullable();
     table.timestamps(true, true);
     table.charset("utf32");
     table.collate("utf32_general_ci");
-    table.comment("Almacena la relación de procedimientos que posee una aplicación suscrita");
-    table.foreign("APLI_UID","FK_APLI_PROC_APLI_APLI").references("APLI_APLI_APLICACION.UID");
+    table.comment("Almacena los identificadores de elementos de una aplicación dada");
+    table.foreign("TIEL_UID","FK_APLI_ELEM_APLI_TIEL").references("APLI_TIEL_TIPO_ELEMENTOS.UID");
   });
 };
 

@@ -15,7 +15,7 @@ exports.up = function (knex) {
     table.collate("utf32_general_ci");
     table.comment("Almacena las categorias de permisos por aplicación y/o procedimiento");
     table.foreign("PADRE_CAPE_UID","FK_PERM_CAPE_PERM_CAPE").references("PERM_CAPE_CATEGORIA_PERMISO.UID");
-    table.foreign("APLI_UID","FK_PERM_CAPE_APLI_APLI").references("APLI_APLI_APLIACION.UID");    
+    table.foreign("APLI_UID","FK_PERM_CAPE_APLI_APLI").references("APLI_APLI_APLICACION.UID");    
   });
 };
 
