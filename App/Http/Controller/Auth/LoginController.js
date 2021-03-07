@@ -54,7 +54,7 @@ class LoginController {
    */
   [validator](record) {
     return FormRequest.make(record, {
-      email: "required|string|email|max:255",
+      login: "required|string|max:255",
       password: "required|string|min:8",
     });
   }

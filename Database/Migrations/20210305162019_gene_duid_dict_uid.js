@@ -12,7 +12,7 @@ exports.up = function (knex) {
     table.charset("utf32");
     table.collate("utf32_general_ci");
     table.comment("Almacena todos los elementos de la aplicación");
-    table.foreign("TELE_UID","FK_GENE_DUID_GENE_TELE").references("APLI_APLI_APLICACION.UID");
+    table.foreign("TELE_UID","FK_GENE_DUID_GENE_TELE").references("GENE_TELE_TIPO_ELEMENTOS.UID");
   });
 };
 

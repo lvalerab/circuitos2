@@ -22,9 +22,9 @@ module.exports = {
   |
   */
   jwt: {
-    model: "User_model",
+    model: "credenciales_model",
     driver: "jwt",
-    uid: "email",
+    uid: "login",
     password: "password",
     secret: process.env.APP_KEY,
     options: {

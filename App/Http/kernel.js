@@ -33,6 +33,6 @@ module.exports = {
   |
   */
   routeMiddleware: {
-    //auth: "App/Http/Middleware/Auth",
+    auth: "App/Http/Middleware/Auth",
   },
 };

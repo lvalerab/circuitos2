@@ -16,7 +16,7 @@ exports.up = function (knex) {
     table.foreign("CAPR_UID","FK_PROP_PROP_PROP_CAPR").references("PROP_CAPR_CATEGORIA_PROP.UID");
     table.charset("utf32");
     table.collate("utf32_general_ci");
-    table.comment("Almacena todos los elementos de la aplicación");
+    table.comment("Almacena las propiedades de la aplicacion");
   });
 };
 
