@@ -7,7 +7,7 @@
         */
         register() {
             return {
-                NtpTime:ioc.asClass("App/Service/NtpService","TRANSIENT")
+                NtpTime: ioc.asClass("App/Service/NtpService","TRANSIENT")
             };
         }
 

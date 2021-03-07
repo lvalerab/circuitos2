@@ -47,3 +47,5 @@ class NtpClientService {
         return this.getTime(Server);
     }
 }
+
+module.exports=NtpClientService;

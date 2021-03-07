@@ -114,6 +114,6 @@ module.exports = {
   providers:[
     "App/Providers/AppServiceProvider",
     "App/Providers/RouteServiceProvider",
-    //"App/Providers/NTPTimeProvider"
+    "App/Providers/NTPTimeProvider"
   ],
 };
