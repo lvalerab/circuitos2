@@ -3,17 +3,16 @@
  * Assign your table name to the tableName variable.
  * Remember, it's always in plural
  */
-let tableName = "APLI_TIEL_TIPO_ELEMENTOS";
+let tableName = "PROP_VANU_VALOR_NUMERICO";
 exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.uuid("UID").primary("PK_APLI_TIEL");
-    table.uuid("APLI_UID").notNullable();
-    table.string("nombre",255);
+    table.uuid("UID").primary("PK_PROP_VANU");
+    table.decimal("valor");
     table.timestamps(true, true);
     table.charset("utf32");
     table.collate("utf32_general_ci");
-    table.comment("Almacena la relacion de tipos de elementos que contiene una aplicación");
-    table.foreign("APLI_UID","FK_APLI_TIEL_GENE_TELE").references("GENE_TELE_TIPO_ELEMENTOS.UID");
+    table.foreign("UID","FK_PROP_VANU_PROP_VPEL").references("PROP_VPEL_VALO_PROP_ELEM.UID");
+    table.comment("Almacena los valores de las propiedades numéricas");
   });
 };
 
