@@ -13,9 +13,9 @@
   "dependencies": {
     "@forkjs/group-router": "^1.0.5",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "expressweb-ioc": "1.0.3",
     "expressweb-scheduler": "^1.0.6",
     "expresswebcore": "^2.0.11",
