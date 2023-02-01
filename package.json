@@ -22,7 +22,7 @@
     "jsonwebtoken": "^8.5.1",
     "maker-console": "^1.0.13",
     "moment": "^2.29.4",
-    "mongoose": "^5.11.9",
+    "mongoose": "^5.13.15",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "ntpclient": "^1.1.2",
